@@ -23,31 +23,30 @@
   height: 100px;
   width: 200px;
   margin: 0 auto;
-  float: left;
+  /* float: left; */
+  display: inline-block;
 }
-/* .view{
-    width:220px;
-    height:100px;
-} */
-/* .pre-slide {
-  display: none;
+.view {
+  width: 220px;
+  height: 100px;
 }
-.next-slide {
-  display: none;
-} */
-/* .cur-slide { */
-/* position: absolute;
-  left: 200px; */
-/* } */
+.pre-slide {
+  margin-left: -200px;
+}
+
 .slides {
   position: relative;
-  z-index: 2;
-  background-color: aqua;
-  width: 600px;
+  width: 200px;
   margin: 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .btn {
   clear: left;
+  margin-top: 10px;
+}
+.container {
+  border: 1px solid aqua;
 }
 </style>
 
